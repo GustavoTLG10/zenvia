@@ -1,11 +1,11 @@
 const { post } = require('request-promise');
 
-
+//requisição post para mandar os dados para api da zenvia para fazer os disparos
 async function disparo(obj){
   const sent = post({
     uri: 'https://api.zenvia.com/v2/channels/whatsapp/messages',
     headers: {
-      'X-API-TOKEN': 'o8KZqTbuO60otigW04YXUnZp-LXdxMrwkpYt',
+      'X-API-TOKEN': 'Yf5aJaokiTzvA0QxbjHD_6FgyQyzAevupAak',
     },
     body: {
       from: '551148377404',

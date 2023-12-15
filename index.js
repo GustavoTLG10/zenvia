@@ -8,6 +8,7 @@ server.get('/dados', (req, res) => {
     res.status(200)
 });
 
+//requisição post com um loop para receber os dados do formulario e enviar as requisições para zenvia
 server.post('/dados', async (req, res) => {
     const data = req.body;
     const numberOfRequests = data.length;
