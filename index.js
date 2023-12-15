@@ -12,7 +12,7 @@ server.post('/dados', async (req, res) => {
     const data = req.body;
     const numberOfRequests = data.length;
     const delayBetweenRequests = 1000;
-
+//
     try {
         for (let i = 0; i < numberOfRequests; i++) {
             const { rgm, numero, link } = data[i];
