@@ -5,7 +5,7 @@ async function disparo(obj){
   const sent = post({
     uri: 'https://api.zenvia.com/v2/channels/whatsapp/messages',
     headers: {
-      'X-API-TOKEN': 'lLTqvuuOOy8JMOP9Jx7F-bqJKpTl9yPYOA8N',
+      'X-API-TOKEN': 'o8KZqTbuO60otigW04YXUnZp-LXdxMrwkpYt',
     },
     body: {
       from: '551148377404',
