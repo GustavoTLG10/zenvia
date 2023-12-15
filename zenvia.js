@@ -1,6 +1,6 @@
 const { post } = require('request-promise');
 
-//requisição post para mandar os dados para api da zenvia para fazer os disparos
+//requisição post para mandar os dados para api da zenvia para fazer os disparos no whatsapp
 async function disparo(obj){
   const sent = post({
     uri: 'https://api.zenvia.com/v2/channels/whatsapp/messages',
@@ -12,7 +12,7 @@ async function disparo(obj){
       to: obj.numero,
       contents: [{
         type: 'text',
-        text: obj.link,
+        text: "Olá você foi indicado por "+ obj.nome + " para estudar na Unigran Ead acesse o link a seguir para mais informações de matricula" + "https://www.unigran.br/ead/vestibular?utm_source=meu-amigo-vale-muito&utm_medium=desconto&utm_content=" + obj.RGM,
       }],
     },
     json: true,
